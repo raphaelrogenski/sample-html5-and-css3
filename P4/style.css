@@ -219,3 +219,38 @@ CLASS
  propriedade style no html = 1000
 
 */
+
+/* 
+SELETORES AVANÇADOS
+
+seleciona apenas os paragrafos filhos do main.
+main > p {
+    background: red;
+}
+
+seleciona apenas o primeiro paragrafo de mesmo nível, após uma imagem.
+img + p {
+    background: blue;
+}
+
+seleciona todos os paragrafos de mesmo nível, após uma imagem.
+img ~ p {
+    background: yellow;
+}
+
+seleciona apenas os paragrafos dentro da classe principal, que não tenham ID = missão.
+.principal p:not(#missao) {
+    background: orange;
+}
+
+ */
+
+ /* 
+ CÁLCULO EM CSS
+
+ faz um cálculo usando diferentes medidas, como % e px.
+ .main {
+    width: calc(40% - 26px);
+ }
+ 
+ */
