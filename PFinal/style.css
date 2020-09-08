@@ -14,6 +14,10 @@ header {
     margin: 0 auto;
 }
 
+/* main {
+    padding: 0 2%;
+} */
+
 nav {
     position: absolute;
     top: 110px;
@@ -38,11 +42,9 @@ nav a:hover {
     text-decoration: underline;
 }
 
-
-
 footer {
     text-align: center;
-    background: url("bg.jpg");
+    background: url("imagens/bg.jpg");
     padding: 40px 0;
 }
 
@@ -50,6 +52,16 @@ footer {
     color: #ffffff;
     font-size: 13px;
     margin: 20px 0 0 0;
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
 }
 
 
@@ -66,7 +78,7 @@ footer {
 }
 
 .principal {
-    padding: 3em 0;
+    padding: 3em 1em;
     background: #FEFEFE;
     width: 940px;
     margin: 0 auto;
@@ -91,7 +103,7 @@ footer {
 }
 
 .mapa {
-    padding: 3em 0;
+    padding: 3em 1em;
     background: linear-gradient(#FEFEFE, #888888);
 }
 
@@ -106,7 +118,7 @@ footer {
 }
 
 .beneficios {
-    padding: 3em 0;
+    padding: 3em 1em;
     background: #888888;
 }
 
@@ -119,6 +131,7 @@ footer {
     width: 40%;
     display: inline-block;
     vertical-align: top;
+    margin: 1em auto;
 }
 
 .itens {
@@ -154,32 +167,83 @@ footer {
         width: auto;
     }
 
-    h1 {
-        text-align: center;
-    }
-
-    nav {
-        position: static;
-    }
-
     .lista-beneficios, .imagem-beneficios {
         width: 100%;
     }
 }
 
 /* produtos */
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
 
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
 
+.produtos li:hover {
+    border-color: #C78C19;
+}
+
+.produtos li:active {
+    border-color: #088C19;
+}
+
+.produtos li:hover h2 {
+    font-size: 30px;
+}
+
+.produtos h2 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 16px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .produtos {
+        width: 100%;
+    }
+
+    .produtos li {
+        display: block;
+        width: auto;
+        margin: 0 1.5% 3% 1.5%;
+    }
+}
 
 /* contato */
 form {
     margin: 40px 0;
+    padding: 1em;
 }
 
 form label, form legend {
     display: block;
     font-size: 20px;
     margin: 0 0 10px 0;
+}
+
+form > label, fieldset > legend {
+    font-weight: bold;
 }
 
 .input-padrao {
@@ -189,8 +253,8 @@ form label, form legend {
     width: 50%;
 }
 
-.checkbox {
-    margin: 20px 0;
+fieldset, .checkbox {
+    margin-bottom: 1em;
 }
 
 .enviar {
@@ -212,7 +276,8 @@ form label, form legend {
 }
 
 table {
-    margin: 20px 0 40px 0;
+    display: inline-block;
+    margin: 20px 1em 40px 1em;
 }
 
 thead {
@@ -224,6 +289,17 @@ thead {
 td, th {
     border: 1px solid #000000;
     padding: 8px 15px;
+}
+
+@media screen and (max-width: 480px) {
+    .input-padrao, .enviar {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .enviar:hover {
+        transform: none;
+    }
 }
 
 
