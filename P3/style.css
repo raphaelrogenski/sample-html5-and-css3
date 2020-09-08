@@ -1,58 +1,46 @@
-.titulo-principal {
-    padding-left: 20px;
+header {
+    background: #BBBBBB;
+    padding: 20px 0;
 }
 
-#banner {
-    width: 100%;
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
 }
 
-.principal {
-    background: #CCCCCC;
-    padding: 30px;
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
 }
 
-.titulo-centralizado {
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+footer {
     text-align: center;
+    background: url("bg.jpg");
+    padding: 40px 0;
 }
 
-p {
-    text-align: center;
+.copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px 0 0 0;
 }
-
-#missao {
-    font-size: 20px;
-}
-
-em strong {
-    color: red;
-}
-
-.beneficios {
-    background: white;
-    padding: 20px;
-}
-
-ul {
-    display: inline-block;
-    vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
-}
-
-.itens {
-    font-style: italic;
-}
-
-.imagembeneficios {
-    width: 50%;
-}
-
-/* 
-PREFIXOS
-
-{tag}
-{tag1} {tag2} = todas as tag2 que estejam dentro de todas as tag1.
-#{id}
-.{classe}
-
-*/
